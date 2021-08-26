@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46354433-5584-4347-948f-09b54a035d95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/rotating-navigation-animation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rotating-navigation-animation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -31,7 +32,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629821650568</updated>
-      <workItem from="1629821651609" duration="3197000" />
+      <workItem from="1629821651609" duration="3825000" />
+      <workItem from="1629910459341" duration="6523000" />
+      <workItem from="1629962470975" duration="7589000" />
     </task>
     <servers />
   </component>
