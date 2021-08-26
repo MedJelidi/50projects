@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="46354433-5584-4347-948f-09b54a035d95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sound-board/sounds/sound-board_sounds_applause.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sound-board/sounds/sound-board_sounds_boo.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sound-board/sounds/sound-board_sounds_gasp.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sound-board/sounds/sound-board_sounds_tada.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sound-board/sounds/sound-board_sounds_victory.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sound-board/sounds/sound-board_sounds_wrong.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +35,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sound-board/sounds" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sound-board/sounds" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -34,11 +54,23 @@
       <updated>1629821650568</updated>
       <workItem from="1629821651609" duration="3825000" />
       <workItem from="1629910459341" duration="6523000" />
-      <workItem from="1629962470975" duration="7589000" />
+      <workItem from="1629962470975" duration="9250000" />
+      <workItem from="1629989767138" duration="10000000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
