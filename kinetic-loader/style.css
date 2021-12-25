@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: darkslateblue;
+}
+
+.triangle {
+  width: 10em;
+  height: 10em;
+  position: relative;
+}
+
+.triangle::before,
+.triangle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 5em solid transparent;
+  border-bottom-color: aqua;
+  animation: animationA 2s linear infinite 0.5s;
+}
+
+.triangle::before {
+  transform: rotate(90deg);
+  animation: animationB 2s linear infinite;
+}
+
+@keyframes animationA {
+  0%,
+  25% {
+    transform: rotate(0);
+  }
+
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animationB {
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(450deg);
+  }
+}
