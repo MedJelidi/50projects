@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --skel-color: rgb(247 247 247);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: aliceblue;
+}
+
+.card {
+  height: 25em;
+  width: 20em;
+  border-radius: 10px;
+  box-shadow: 0 0 0.8em -0.5em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  height: 55%;
+}
+
+.skel {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-bg,
+.skel-card-desc::before,
+.skel-card-desc::after {
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: skel-anim 1s linear infinite;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5em;
+  height: 45%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.skel-card-title {
+  width: 100%;
+  height: 2rem;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.skel-card-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.skel-card-desc::before,
+.skel-card-desc::after {
+  content: '';
+  width: 100%;
+  height: 0.4em;
+  margin-bottom: 0.5rem;
+}
+
+.skel-card-desc::after {
+  margin-bottom: 0;
+}
+
+.card-author {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  height: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 25%;
+  justify-content: center;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.pub-date {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.skel-author-name,
+.skel-pub-date {
+  width: 5rem;
+  height: 0.5rem;
+}
+
+@keyframes skel-anim {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
