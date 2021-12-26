@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  height: 4.5em;
+  width: 100%;
+  padding: 1em;
+  color: white;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.header-bottom {
+  height: 3.5em;
+  color: #222;
+  background-color: white;
+}
+
+header > #logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+header > #links {
+  height: 100%;
+  width: 19em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  font-size: 1.08rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  color: red;
+}
+
+#welcome {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#welcome::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+}
+
+#welcome-msg {
+  position: absolute;
+  font-size: 1.75rem;
+  max-height: 15rem;
+  max-width: 75%;
+  margin: auto;
+  inset: 0;
+  color: #fff;
+}
+
+#home-bg {
+  height: 100%;
+  width: 100%;
+  background: #222 url('https://picsum.photos/1839/908') center center no-repeat;
+  background-size: cover;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 10rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content > h3 {
+  /* margin: 0; */
+  color: #222;
+}
+
+.content > p {
+  /* margin: 0; */
+  font-size: 1.1em;
+  color: rgb(114, 114, 114);
+}
