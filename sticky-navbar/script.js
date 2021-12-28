@@ -1,8 +1,7 @@
 const header = document.querySelector('header')
 
 document.addEventListener('scroll', () => {
-  const reachedMiddle =
-    window.innerHeight - window.scrollY < window.innerHeight / 2
+  const reachedPoint = window.scrollY > header.offsetHeight
   header.classList.remove('header-bottom')
-  if (reachedMiddle) header.classList.add('header-bottom')
+  if (reachedPoint) header.classList.add('header-bottom')
 })
