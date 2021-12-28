@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: rgb(35, 27, 88);
+}
+
+.search-box {
+  height: 3.5rem;
+  width: 45rem;
+  background-color: rgb(79, 42, 117);
+  position: relative;
+  border-radius: 10px;
+}
+
+.search-box > input {
+  position: absolute;
+  height: 100%;
+  width: 95%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.search-box > input::placeholder {
+  color: rgb(190, 178, 161);
+}
+
+.result-box {
+  width: 85%;
+  height: 17rem;
+  margin: 3rem 2rem;
+  padding: 1rem;
+  background-color: rgb(79, 42, 117);
+  display: flex;
+  border-radius: 15px;
+  gap: 1rem;
+}
+
+.profile-pic {
+  height: 10rem;
+  width: 10rem;
+  border: 10px solid rgb(35, 27, 88);
+  border-radius: 100%;
+}
+
+.user-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 70%;
+}
+
+.user-info-box > .fullname {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.user-info-box > .desc {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.user-info-box > .metadata-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.user-info-box > .tags-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.tag {
+  height: 1rem;
+  background-color: rgb(35, 27, 88);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.outer-circle {
+  position: relative;
+  margin: 5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.inner-circle {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(79, 42, 117) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  content: '';
+  position: absolute;
+  inset: -5px;
+  z-index: -1;
+  border-radius: inherit;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* 50% {
+    transform: rotate(180deg);
+  } */
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
