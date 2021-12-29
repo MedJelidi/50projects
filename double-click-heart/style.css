@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.image {
+    height: 25rem;
+    width: 20rem;
+    background-image: url('https://picsum.photos/320/400');
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px #555;
+    position: relative;
+    cursor: pointer;
+}
+
+.heart {
+    width: 2rem;
+    height: 2rem;
+    background-color: darkred;
+    position: absolute;
+    animation: pounding 1s forwards;
+    pointer-events: none;
+    transform: rotate(45deg);
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -1rem;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: -1rem;
+}
+
+@keyframes pounding {
+    100% {
+        opacity: 0;
+    }
+}
