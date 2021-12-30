@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(76, 20, 179);
+    --darker-main-color: rgb(36, 8, 88);
+    --even-darker-main-color: rgb(19, 6, 43);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+.container {
+    width: 22rem;
+    background-color: var(--darker-main-color);
+    color: #fff;
+    box-shadow: 0 0 10px 5px rgb(54 10 134);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.result-box {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--even-darker-main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 0.35rem;
+}
+
+.copy-box {
+    width: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 0.35rem;
+    top: 0.35rem;
+    bottom: 0.35rem;
+    cursor: pointer;
+}
+
+.mrl-1 {
+    margin: 0.6rem 0;
+}
+
+.param {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.param>#pass-len {
+    width: 2.5rem;
+}
+
+button {
+    width: 100%;
+    align-items: center;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.7rem 0;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
