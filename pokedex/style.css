@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(to right, #d4d3dd, #efefbb);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 10rem;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.poke-image {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.poke-id {
+    padding: 0.8rem;
+    background: rgba(0, 0, 0, 0.2);
+    height: 1rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h3,
+h5 {
+    margin: 0;
+    text-transform: capitalize;
+}
