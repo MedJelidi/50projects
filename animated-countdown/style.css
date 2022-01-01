@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.countdown-value {
+    font-size: 3rem;
+    color: rgba(63, 63, 216, 0.89);
+    margin: 0;
+    z-index: -1;
+}
+
+.pre-anim {
+    animation: goIn 0.25s;
+}
+
+.animate {
+    animation: countdown 0.5s linear;
+}
+
+.info-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    height: 5rem;
+    width: 15rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.hide {
+    animation: hide 0.25s forwards;
+}
+
+@keyframes goIn {
+    0% {
+        transform: rotateZ(-270deg) translate(50px, -50px);
+    }
+    100% {
+        transform: rotateZ(-360deg) translate(0, 0);
+    }
+}
+
+@keyframes hide {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes countdown {
+    25% {
+        transform: rotateZ(-90deg) translate(-50px, -50px);
+    }
+    50% {
+        transform: rotateZ(-180deg) translate(0, -50px);
+    }
+    75% {
+        transform: rotateZ(-270deg) translate(50px, -50px);
+    }
+    100% {
+        transform: rotateZ(-360deg) translate(0, 0);
+    }
+}
