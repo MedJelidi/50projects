@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.back-img {
+    background: url('https://picsum.photos/972') no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.card {
+    width: 26.875rem;
+    height: 25rem;
+    background-color: #fff;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.88rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+label,
+input {
+    margin-bottom: 0.8rem;
+}
+
+input {
+    height: 2.4rem;
+    border-radius: .25rem;
+    border: 1px solid #e2e8f0;
+    padding-left: .5rem;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #a1b0c4;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #000000;
+    font-size: 1rem;
+    border-radius: .25rem;
+    padding: 0.7rem 2rem;
+    margin-top: 1.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+}
