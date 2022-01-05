@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.menu-icon {
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-bar {
+    width: inherit;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #232323;
+}
+
+.menu-bar::before,
+.menu-bar::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    left: left;
+}
+
+.menu-bar::before {
+    top: 6px;
+}
+
+.menu-bar::after {
+    top: 12px;
+}
+
+.hide-wrappers {
+    animation: close-wrappers 750ms forwards ease;
+}
+
+.unhide-wrappers {
+    animation: open-wrappers 750ms forwards ease;
+}
+
+.red {
+    position: absolute;
+    background-color: red;
+    width: 53%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    animation-delay: 250ms;
+}
+
+.black {
+    position: absolute;
+    background-color: black;
+    width: 56%;
+    height: 100%;
+    left: 0;
+    z-index: -2;
+    animation-delay: 500ms;
+}
+
+.white {
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+}
+
+.white>* {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.sub {
+    margin-left: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 55px;
+    right: 15%;
+}
+
+.white.unhide-wrappers {
+    transform: translateX(-100%);
+    animation-delay: 500ms;
+}
+
+.red.unhide-wrappers {
+    transform: translateX(-100%);
+    animation-delay: 250ms;
+}
+
+.black.unhide-wrappers {
+    transform: translateX(-100%);
+    animation-delay: 0ms;
+}
+
+.h-menu {
+    animation: hide-menu 750ms forwards ease;
+}
+
+.s-menu {
+    animation: show-menu 750ms forwards ease;
+}
+
+@keyframes open-wrappers {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes close-wrappers {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes show-menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide-menu {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
