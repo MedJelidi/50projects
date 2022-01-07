@@ -1,0 +1,1 @@
+## My take on Traversy Media [50 projects](https://github.com/bradtraversy/50projects50days).
